@@ -12,7 +12,7 @@ function createSasToken() {
     const signatureUTF8 = JSON.parse(JSON.stringify(`${process.env.id}\n${expiry}`));
     const hash = crypto.createHmac('sha512', process.env.key).update(signatureUTF8).digest('base64');
 
-    return `uid=${process.env.id}&ex=${expiry}&sn=${hash}`;
+    return `SharedAccessSignature uid=${process.env.id}&ex=${expiry}&sn=${hash}`;
 }
 
 fs.writeFileSync('/sasToken', createSasToken());
