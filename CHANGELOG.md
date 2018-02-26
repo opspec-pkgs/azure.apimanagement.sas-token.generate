@@ -5,11 +5,7 @@ All notable changes will be documented in this file in accordance with
 
 ## \[Unreleased]
 
-## \[2.0.0] - 2018-02-25
-
-### Fixed
-
-- removed `SharedAccessSignature ` prefix from returned token; not actually part of token
+## \[1.0.1] - 2018-02-25
 
 ### Changed
 
