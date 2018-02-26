@@ -1,4 +1,5 @@
 const crypto = require('crypto');
+const fs = require('fs');
 
 // see https://docs.microsoft.com/en-us/rest/api/apimanagement/apimanagementrest/azure-api-management-rest-api-authentication#ProgrammaticallyCreateToken
 function createSasToken() {
@@ -14,4 +15,4 @@ function createSasToken() {
     return `SharedAccessSignature uid=${process.env.id}&ex=${expiry}&sn=${hash}`;
 }
 
-console.log(`sasToken=${createSasToken()}`);
+fs.writeFileSync('/sasToken', createSasToken());

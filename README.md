@@ -1,36 +1,40 @@
-[![Build Status](https://travis-ci.org/opspec-pkgs/azure.apimanagement.sas-token.generate.svg?branch=master)](https://travis-ci.org/opspec-pkgs/azure.apimanagement.sas-token.generate)
+[![Build Status](https://travis-ci.organagement.sas-token.generate.svg?branch=master)](https://travis-ci.organagement.sas-token.generate)
+
+<img src="icon.svg" alt="icon" height="100px">
 
 # Problem statement
 
 generates an azure api management SAS (Shared Access Signature) token
 
+# Format
+
+this version of the pkg is in [![opspec 0.1.5](https://img.shields.io/badge/opspec-0.1.5-brightgreen.svg?colorA=6b6b6b&colorB=fc16be)](https://opspec.io/0.1.5/packages.html) format
+
 # Example usage
 
-> note: in examples, VERSION represents a version of the
-> azure.apimanagement.sas-token.generate pkg
-
-## install
+## Install
 
 ```shell
-opctl pkg install github.com/opspec-pkgs/azure.apimanagement.sas-token.generate#VERSION
+opctl pkg install azure.apimanagement.sas-token.generate#1.0.1
 ```
 
-## run
+## Run
 
 ```
-opctl run github.com/opspec-pkgs/azure.apimanagement.sas-token.generate#VERSION
+opctl run azure.apimanagement.sas-token.generate#1.0.1
 ```
 
-## compose
+## Compose
 
 ```yaml
 op:
-  pkg: { ref: github.com/opspec-pkgs/azure.apimanagement.sas-token.generate#VERSION }
-  inputs: 
-    id:
+pkg: { ref: azure.apimanagement.sas-token.generate#1.0.1 }
+inputs:
     key:
+    # params w/ default
+    id:
     minutesValid:
-  outputs:
+outputs:
     sasToken:
 ```
 
@@ -39,7 +43,7 @@ op:
 join us on
 [![Slack](https://opspec-slackin.herokuapp.com/badge.svg)](https://opspec-slackin.herokuapp.com/)
 or
-[open an issue](https://github.com/opspec-pkgs/azure.apimanagement.sas-token.generate/issues)
+[open an issue](https://azure.apimanagement.sas-token.generate/issues)
 
 # Releases
 

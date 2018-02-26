@@ -1,5 +1,6 @@
 name: azure.apimanagement.sas-token.generate
 description: generates an azure api management SAS (Shared Access Signature) token
+icon: /icon.svg
 inputs:
   id:
     string:
@@ -20,14 +21,14 @@ outputs:
   sasToken:
     string:
       description: the generated SAS token
-version: 1.0.0
+version: 1.0.1
 run:
   container:
-    image: { ref: 'node:8.1.0-alpine' }
-    cmd: [ node, /index.js ]
-    files: { /index.js }
-    stdOut:
-      sasToken=: sasToken
+    image: { ref: 'node:9.5.0-alpine' }
+    cmd: [ node, /cmd.js ]
+    files:
+      /cmd.js:
+      /sasToken: $(sasToken)
     envVars:
       id:
       key:
