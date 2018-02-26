@@ -5,9 +5,13 @@ All notable changes will be documented in this file in accordance with
 
 ## \[Unreleased]
 
-## \[1.0.1] - 2018-02-25
+## \[2.0.0] - 2018-02-25
 
-## Changed
+### Fixed
+
+- removed `SharedAccessSignature ` prefix from returned token; not actually part of token
+
+### Changed
 
 - sasToken no longer written to stdOut
 
