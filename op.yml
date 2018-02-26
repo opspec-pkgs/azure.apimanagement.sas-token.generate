@@ -1,4 +1,4 @@
-name: azure.apimanagement.sas-token.generate
+name: github.com/opspec-pkgs/azure.apimanagement.sas-token.generate
 description: generates an azure api management SAS (Shared Access Signature) token
 icon: /icon.svg
 inputs:
@@ -21,7 +21,7 @@ outputs:
   sasToken:
     string:
       description: the generated SAS token
-version: 1.0.1
+version: 2.0.0
 run:
   container:
     image: { ref: 'node:9.5.0-alpine' }
