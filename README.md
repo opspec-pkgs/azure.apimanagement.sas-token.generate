@@ -28,13 +28,13 @@ opctl run github.com/opspec-pkgs/azure.apimanagement.sas-token.generate#1.0.1
 
 ```yaml
 op:
-pkg: { ref: github.com/opspec-pkgs/azure.apimanagement.sas-token.generate#1.0.1 }
-inputs:
+  pkg: { ref: github.com/opspec-pkgs/azure.apimanagement.sas-token.generate#1.0.1 }
+  inputs:
     key:
     # params w/ default
     id:
     minutesValid:
-outputs:
+  outputs:
     sasToken:
 ```
 

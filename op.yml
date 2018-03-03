@@ -1,6 +1,5 @@
 name: github.com/opspec-pkgs/azure.apimanagement.sas-token.generate
 description: generates an azure api management SAS (Shared Access Signature) token
-icon: /icon.svg
 inputs:
   id:
     string:
